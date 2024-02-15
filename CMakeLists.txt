@@ -6,9 +6,10 @@ FIND_PACKAGE(PNG REQUIRED)
 INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIR} ${PNG_INCLUDE_DIR} include)
 
 set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_executable(daedalus
-        main.cpp
+        src/main.cpp
         include/traversal/image_utils.cpp
 )
 
